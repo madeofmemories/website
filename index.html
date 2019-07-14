@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Libre+Barcode+128+Text|Literata|Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <h1 class="back" alt="Hello"><center><div class="head"><h2>another typical book blog</h2></div></center></h1>
+    <h1 class="back" alt="Hello"><center><div class="head"><h2 class="oho">another typical book blog</h2></div></center></h1>
   </head>
   <nav>
-    <link rel="stylesheet" href="/website/index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="topnav" id="myTopnav" style="text-align:center;">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
       <a href="#home" class="activa">Home</a>
+      <a href="#about">About</a>
       <a href="#news">Recommendations</a>
       <a href="#news">Reviews</a>
       <a href="https://www.goodreads.com/madeofmemories">Goodreads</a>
-      <a href="#about">About</a>
-      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i> -->
-      <!-- </a> -->
     </div>
   </nav>
   <br>
 
-  <body style="font-family: georgia; font-size:18px">
+<div class="slideback">
+  <div class="slideshow-con">
+    <div class="slides-fade">
+      <img src="https://shreyathinks.files.wordpress.com/2014/04/wpid-0933de77287e2dc4f606e7a878996bd4.jpg" style="width:400px; height: 400px">
+    </div>
+    <div class="slides-fade">
+      <img src="https://weneedfun.com/wp-content/uploads/2016/11/Harry-Potter-Quotes-15.png" style="width:400px; height: 400px">
+    </div>
+    <div class="slides-fade">
+      <img src="https://i.etsystatic.com/7361151/d/il/64abfc/1196909027/il_570xN.1196909027_smli.jpg?version=0" style="width:400px; height: 400px">
+    </div>
+    <div class="slides-fade">
+      <img src="https://i.pinimg.com/345x/86/5b/ba/865bba46b62cedf5e9642981fbe750f5.jpg" style="width:400px; height: 400px">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<br>
+
+  <body>
     <button class="collapsible" onkeydown="search(this)"><div style="color:#ffffff;"><h2 class="owo">&nbsp; &nbsp;introduction </h2></div></button class="collapsible">
     <div class="content">
     <img src="https://uploads.disquscdn.com/images/b68a6be607111d80e247f7f8699955713a244dbfb16eb02f65d57584cef1cf3c.gif" width="150px" height="150px" align="right">
@@ -60,3 +87,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+
