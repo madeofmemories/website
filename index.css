@@ -25,10 +25,106 @@ button {
   padding: 1px;
 }
 
+h2.oho {
+  font-family: 'Literata', serif;
+  font-family: 'Gentium Basic', serif;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Libre Barcode 128 Text', cursive;
+font-size: 350%;
+
+}
+
 h2 {
-  font-family: monospace;
-  font-size: 175%;
+    font-family: 'Literata', serif;
+    font-family: 'Gentium Basic', serif;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 135%;
+
+}
+
+body {
+  font-family: georgia;
+  font-size:18px;
+}
+
+* {box-sizing:border-box}
+
+.slideback {
+  max-width: 600px;
+  max-height: 600px;
+  background-image: url(https://media1.giphy.com/media/ZH82yukB6v8xq/source.gif);
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+  padding: 1px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-con {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.slides-fade {
+  display: block;
+  align-items: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
   font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .topnav {
@@ -43,7 +139,10 @@ h2 {
   /* text-align: right; */
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
+  font-family: 'Literata', serif;
+  font-family: 'Gentium Basic', serif;
+  font-family: 'Press Start 2P', cursive;
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -95,8 +194,3 @@ button {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
-/* .responsive {
-  max-width: 100%;
-  height: auto;
-} */
